@@ -52,7 +52,8 @@ RUN pip install -v --no-cache-dir \
         tensordict==0.8.3 torchdata \
         "transformers[hf_xet]>=4.51.0" accelerate datasets peft hf-transfer \
         "numpy<2.0.0" pyarrow>=15 pandas ray[default] wandb dill ruff \
-        fastapi[standard]>=0.115 optree>=0.13 pydantic>=2.9 grpcio>=1.62
+        fastapi[standard]>=0.115 optree>=0.13 pydantic>=2.9 grpcio>=1.62 \
+        verl openai litellm tqdm psutil cloudpickle
 
 ###############################################################################
 # 7. Flash-Attention (source) – capped at 16 parallel nvcc jobs
